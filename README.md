@@ -12,4 +12,10 @@
 `mke2fs /dev/xvdf`\
 `sudo !!`\
 `mount /dev/xvdf /yourMountFileName`\
-
+3. Go into yourMountFileName\
+`cd yourMountFileName`\
+`vim newFile.txt`\
+3.1 Type something in vim file\
+`:wq` \
+`mkdir Home` \
+4. Move newFile.txt to Home \
