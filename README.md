@@ -7,7 +7,7 @@
 `xvda    202:0    0   8G  0 disk\`\
 `└─xvda1 202:1    0   8G  0 part /`\
 `xvdf    202:80   0   1G  0 disk `\
-`xvdm    202:192  0   2G  0 disk `\
+`xvdm    202:192  0   2G  0 disk `
 2. Mount xvdf disk block to 
 `mke2fs /dev/xvdf`\
 `sudo !!`\
