@@ -19,3 +19,58 @@
 `:wq` \
 `mkdir Home` \
 4. Move newFile.txt to Home \
+
+
+## S3
+Source reference: https://gsviec.com/blog/amazon-s3-la-gi-va-tai-sao-ban-nen-dung-no/
+
+
+1. Go to `S3 on AWS`
+2. Create a bucket then naming for it
+3. Upload a file from instance to bucket by CLI - linux
+cp yourFile.txt 
+
+NOTE: If we want to make our bucket be **public** then add this rule to policy
+```
+{
+    "Version": "2008-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowPublicRead",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "*"
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::&lt;tên-bucket-của ban&gt;/*"
+        }
+    ]
+}
+```
+
+One more example from amazon
+The following example bucket policy shows the preceding policy elements. The policy allows Dave, a user in account Account-ID, **s3:GetObject**, **s3:GetBucketLocation**, and **s3:ListBucket** Amazon S3 permissions on the awsexamplebucket1 bucket.
+```
+{
+    "Version": "2012-10-17",
+    "Id": "ExamplePolicy01",
+    "Statement": [
+        {
+            "Sid": "ExampleStatement01",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::123456789012:user/Dave"
+            },
+            "Action": [
+                "s3:GetObject",
+                "s3:GetBucketLocation",
+                "s3:ListBucket"
+            ],
+            "Resource": [
+                "arn:aws:s3:::awsexamplebucket1/*",
+                "arn:aws:s3:::awsexamplebucket1"
+            ]
+        }
+    ]
+}
+```
