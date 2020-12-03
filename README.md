@@ -28,8 +28,15 @@ Source reference: https://gsviec.com/blog/amazon-s3-la-gi-va-tai-sao-ban-nen-dun
 1. Go to `S3 on AWS`
 2. Create a bucket then naming for it
 3. Upload a file from instance to bucket by CLI - linux
-cp yourFile.txt 
+```
+touch demo.txt
+vim demo.txt
 
+```
+Press `i` to edit your demo file, when you finish press `Esc` end type: **`:wq`**
+```
+cp demo.txt 
+aws s3 cp demo.txt s
 NOTE: If we want to make our bucket be **public** then add this rule to policy
 ```
 {
@@ -49,7 +56,8 @@ NOTE: If we want to make our bucket be **public** then add this rule to policy
 ```
 
 One more example from amazon
-The following example bucket policy shows the preceding policy elements. The policy allows Dave, a user in account Account-ID, **s3:GetObject**, **s3:GetBucketLocation**, and **s3:ListBucket** Amazon S3 permissions on the awsexamplebucket1 bucket.
+The following example bucket policy shows the preceding policy elements.\
+The policy allows Dave, a user in account Account-ID, **s3:GetObject**, **s3:GetBucketLocation**, and **s3:ListBucket** Amazon S3 permissions on the awsexamplebucket1 bucket.
 ```
 {
     "Version": "2012-10-17",
