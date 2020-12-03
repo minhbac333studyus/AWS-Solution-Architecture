@@ -31,9 +31,8 @@ Source reference: https://gsviec.com/blog/amazon-s3-la-gi-va-tai-sao-ban-nen-dun
 ```
 touch demo.txt
 vim demo.txt
-
 ```
-Press `i` to edit your demo file, when you finish press `Esc` end type: **`:wq`**
+Press **`i`** to edit your demo file, when you finish press **`Esc`** end type: **`:wq`**
 ```
 cp demo.txt 
 aws s3 cp demo.txt s
