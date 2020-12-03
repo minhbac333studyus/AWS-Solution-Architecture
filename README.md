@@ -27,13 +27,15 @@
 
 ## S3
 Source reference: https://gsviec.com/blog/amazon-s3-la-gi-va-tai-sao-ban-nen-dung-no/
-1. Create an role in **IAM** 
-1.1 Give access to AmazonS3FullAcess
+1. Create an role in **IAM** \
+1.1 Give access to **AmazonS3FullAcess**\
+1.2 Give a name for the role: For example: **ec2-s3-fullAccess**
 
 
-1. Go to `S3 on AWS`
-2. Create a bucket then naming for it
-3. Upload a file from instance to bucket by CLI - linux
+
+2. Go to `S3 on AWS`
+3. Create a bucket then naming for it
+4. Upload a file from instance to bucket by CLI - linux
 ```
 touch demo.txt
 vim demo.txt
