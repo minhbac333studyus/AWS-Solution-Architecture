@@ -1,7 +1,8 @@
 # AWS-Solution-Architecture
 # MENU
 ## Contents
-- [S3] (#-s3)
+- [EBS](#-ebs)
+- [S3](#-s3)
 
 ## EBS
 1. run: `lsblk`\
