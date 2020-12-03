@@ -12,12 +12,16 @@
 `xvdf    202:80   0   1G  0 disk `\
 `xvdm    202:192  0   2G  0 disk `
 2. Mount xvdf disk block to 
-`mke2fs /dev/xvdf`\
-`sudo !!`
-`mount /dev/xvdf /yourMountFileName`\
+```
+mke2fs /dev/xvdf`
+sudo !!
+mount /dev/xvdf /yourMountFileName
+```
 3. Go into yourMountFileName\
-`cd yourMountFileName`\
-`vim newFile.txt`\
+```
+cd yourMountFileName
+vim newFile.txt
+```
 3.1 Type something in vim file\
 `:wq` \
 `mkdir Home` \
