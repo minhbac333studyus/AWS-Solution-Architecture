@@ -33,9 +33,11 @@ touch demo.txt
 vim demo.txt
 ```
 Press **`i`** to edit your demo file, when you finish press **`Esc`** end type: **`:wq`**
+
 ```
 cp demo.txt 
 aws s3 cp demo.txt s
+```
 NOTE: If we want to make our bucket be **public** then add this rule to policy
 ```
 {
