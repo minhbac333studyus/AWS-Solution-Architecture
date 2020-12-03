@@ -27,6 +27,8 @@
 
 ## S3
 Source reference: https://gsviec.com/blog/amazon-s3-la-gi-va-tai-sao-ban-nen-dung-no/
+1. Create an role in **IAM** 
+1.1 Give access to S3FullAcess
 
 
 1. Go to `S3 on AWS`
