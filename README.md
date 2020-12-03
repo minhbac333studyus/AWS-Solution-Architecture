@@ -30,7 +30,7 @@ Source reference: https://gsviec.com/blog/amazon-s3-la-gi-va-tai-sao-ban-nen-dun
 1. Create an role in **IAM** \
 1.1 Give access to **AmazonS3FullAcess**\
 1.2 Give a name for the role: For example: **ec2-s3-fullAccess**
-
+1.3 **NOTE**::Make sure your instance EC2 have this IAM role
 
 
 2. Go to `S3 on AWS`
@@ -66,7 +66,7 @@ NOTE: If we want to make our bucket be **public** then add this rule to policy
                 "AWS": "*"
             },
             "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::&lt;tên-bucket-của ban&gt;/*"
+            "Resource": "arn:aws:s3:::your-bucket-name/*"
         }
     ]
 }
