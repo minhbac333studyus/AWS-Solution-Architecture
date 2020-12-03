@@ -36,7 +36,7 @@ Press **`i`** to edit your demo file, when you finish press **`Esc`** and type: 
 
 ```
 cp demo.txt 
-aws s3 cp demo.txt s
+aws s3 cp demo.txt s3://adam.test.buckket/hello.txt
 ```
 Use the following command to copy an object from Amazon S3 to your instance.
 
