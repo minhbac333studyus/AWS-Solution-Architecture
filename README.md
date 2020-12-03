@@ -1,5 +1,4 @@
 # AWS-Solution-Architecture
-# MENU
 ## Contents
 - [EBS](#ebs)
 - [S3](#s3)
