@@ -13,7 +13,7 @@
 `xvdm    202:192  0   2G  0 disk `
 2. Mount xvdf disk block to 
 ```
-mke2fs /dev/xvdf`
+mke2fs /dev/xvdf
 sudo !!
 mount /dev/xvdf /yourMountFileName
 ```
