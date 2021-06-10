@@ -1,7 +1,15 @@
 # AWS-Solution-Architecture
 ## Contents
+- [EC2](#ec2)
 - [EBS](#ebs)
 - [S3](#s3)
+
+## EC2
+1. Convert .pem to .ppk by puttygen\
+2. Get the instance ssh `ec2-18-222-55-120.us-east-2.compute.amazonaws.com`\
+3. In category **Connection/Data**, type `ec2-user` in Auto-login username\  
+4. In category **Connection/SSH/Auth**, choose private key file .ppk from step 1
+5. Connect to server
 
 ## EBS
 1. run: `lsblk`\
