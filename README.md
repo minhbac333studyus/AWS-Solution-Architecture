@@ -8,6 +8,43 @@
 2.Go to Edit/Settings/ choose SFTP and set the private key from AWS for the instance EC2\
 3.Go to File/Site Manager
 
+## Install Java on Amazon Linux 2
+Step 1 – Install Java on Amazon Linux
+The OpenJDK 8 is available under default yum repositories and OpenJDK 11 is available under Amazon Linux 2 extras repositories. You can simply install Java 11 or Java 8 on the Amazon Linux system using the following commands.
+
+Run below commands to install Java 11 on Amazon Linux:
+`
+sudo amazon-linux-extras install java-openjdk11
+`
+Run below commands to install Java 8 on Amazon Linux:
+`
+sudo yum install java-1.8.0-openjdk
+`
+Step 2 – Check Active Java Version\
+After successfully installing Java on Amazon Linux using the above steps, Let’s verify the installed version using the following command.
+
+java -version
+
+`
+openjdk version "1.8.0_222"
+OpenJDK Runtime Environment (build 1.8.0_222-8u222-b10-1ubuntu1~18.04.1-b10)
+OpenJDK 64-Bit Server VM (build 25.222-b10, mixed mode)
+`
+Step 3 – Switch Java Version
+Use alternatives command-line utility to switch active Java version on your Amazon Linux system. Run below command from the command line and select the appropriate Java version to make it default.
+`
+alternatives --config java
+`
+Install Java on Amazon Linux
+
+After switching let’s check again active Java version:
+
+java -version
+`
+openjdk version "11.0.7" 2020-04-14 LTS
+OpenJDK Runtime Environment 18.9 (build 11.0.7+10-LTS)
+OpenJDK 64-Bit Server VM 18.9 (build 11.0.7+10-LTS, mixed mode, sharing)
+`
 
 /var/www/html/index.html
 
