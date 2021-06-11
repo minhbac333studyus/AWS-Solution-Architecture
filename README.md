@@ -37,9 +37,8 @@ alternatives --config java
 Install Java on Amazon Linux
 
 After switching let’s check again active Java version:
-
-java -version
-`
+`\
+java -version\
 openjdk version "11.0.7" 2020-04-14 LTS\
 OpenJDK Runtime Environment 18.9 (build 11.0.7+10-LTS)\
 OpenJDK 64-Bit Server VM 18.9 (build 11.0.7+10-LTS, mixed mode, sharing)
