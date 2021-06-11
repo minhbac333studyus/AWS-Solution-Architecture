@@ -5,7 +5,7 @@
 - [S3](#s3)
 
 ## Step To Install Tomcat 9 For Java Web Development
-- [Install Java](###InstallJava)
+- [Install Java](#InstallJava)
 
 1.Install FileZilla Client\
 2.Go to Edit/Settings/ choose SFTP and set the private key from AWS for the instance EC2\
