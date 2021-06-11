@@ -4,6 +4,11 @@
 - [EBS](#ebs)
 - [S3](#s3)
 
+1.Install FileZilla Client
+2.Go to Edit/Settings/ choose SFTP and set the private key from AWS for the instance EC2
+3.Go to File/Site Manager
+
+
 ## EC2
 1. Convert .pem to .ppk by puttygen\
 2. Get the instance ssh `ec2-18-222-55-120.us-east-2.compute.amazonaws.com`\
