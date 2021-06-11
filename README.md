@@ -9,7 +9,7 @@
 3.Go to File/Site Manager
 
 ## Intall Java on Amazon Linux 2 by  Wget Command
-`get --no-check-certificate -c --header "Cookie: oraclelicense=accept-securebackup-cookie" https://download.oracle.com/otn-pub/java/jdk/11.0.2+9/f51449fcd52f4d52b93a989c5c56ed3c/jdk-11.0.2_linux-x64_bin.rpm`\
+`wget --no-check-certificate -c --header "Cookie: oraclelicense=accept-securebackup-cookie" https://download.oracle.com/otn-pub/java/jdk/11.0.2+9/f51449fcd52f4d52b93a989c5c56ed3c/jdk-11.0.2_linux-x64_bin.rpm`
 
 
 ## Install Java on Amazon Linux 2 by SUDO COMMAND
