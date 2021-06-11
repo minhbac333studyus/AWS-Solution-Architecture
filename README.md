@@ -5,13 +5,14 @@
 - [S3](#s3)
 
 ## Step To Install Tomcat 9 For Java Web Development
-- [Install Java](#INSTALLJAVA)
+- [Java](#JAVA)
+- [Tomcat9](#Tomcat9)
 
 1.Install FileZilla Client\
 2.Go to Edit/Settings/ choose SFTP and set the private key from AWS for the instance EC2\
 3.Go to File/Site Manager
 
-### Install Java 
+### Java 
 ####   Amazon Linux 2 by  Wget Command
 `wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3a%2F%2Fwww.oracle.com%2Ftechnetwork%2Fjava%2Fjavase%2Fdownloads%2Fjdk8-downloads-2133151.html; oraclelicense=accept-securebackup-cookie;" "https://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787e4a523244c269598db4e85c51e0c/jdk-8u191-linux-x64.rpm"`
 
@@ -49,7 +50,13 @@ After switching let’s check again active Java version:\
 `OpenJDK Runtime Environment 18.9 (build 11.0.7+10-LTS)`\
 `OpenJDK 64-Bit Server VM 18.9 (build 11.0.7+10-LTS, mixed mode, sharing)`\
 
-/var/www/html/index.html
+### Tomcat 9
+1. Download Tomcat 9, Go to  `https://tomcat.apache.org/download-90.cgi`
+2. Under Core section, right-click on **`tar.gz`** and choose `copy link address`
+<p> 3. Open AWS Linux 2 Server, in urs/java directory, use `wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.46/bin/apache-tomcat-9.0.46.tar.gz`
+</p>
+
+
 
 
 ## EC2
