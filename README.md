@@ -23,7 +23,8 @@ sudo yum install java-1.8.0-openjdk
 Step 2 – Check Active Java Version\
 After successfully installing Java on Amazon Linux using the above steps, Let’s verify the installed version using the following command.\
 
-java -version\ 
+java -version
+
 `openjdk version "1.8.0_222"`\
 `OpenJDK Runtime Environment (build 1.8.0_222-8u222-b10-1ubuntu1~18.04.1-b10)`\
 `OpenJDK 64-Bit Server VM (build 25.222-b10, mixed mode)`\
