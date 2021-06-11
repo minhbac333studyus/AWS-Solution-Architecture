@@ -4,9 +4,12 @@
 - [EBS](#ebs)
 - [S3](#s3)
 
-1.Install FileZilla Client
-2.Go to Edit/Settings/ choose SFTP and set the private key from AWS for the instance EC2
+1.Install FileZilla Client\
+2.Go to Edit/Settings/ choose SFTP and set the private key from AWS for the instance EC2\
 3.Go to File/Site Manager
+
+
+/var/www/html/index.html
 
 
 ## EC2
