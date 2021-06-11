@@ -51,10 +51,13 @@ After switching let’s check again active Java version:\
 `OpenJDK 64-Bit Server VM 18.9 (build 11.0.7+10-LTS, mixed mode, sharing)`\
 
 ### Tomcat 9
-1. Download Tomcat 9, Go to  `https://tomcat.apache.org/download-90.cgi`
+1. Download Tomcat 9, Go to  [https://tomcat.apache.org/download-90.cgi](https://tomcat.apache.org/download-90.cgi)
+
 2. Under Core section, right-click on **`tar.gz`** and choose `copy link address`
-<p> 3. Open AWS Linux 2 Server, in urs/java directory, use `wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.46/bin/apache-tomcat-9.0.46.tar.gz`
-</p>
+
+3. Open AWS Linux 2 Server, in urs/java directory, use `wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.46/bin/apache-tomcat-9.0.46.tar.gz`
+
+4.
 
 
 
