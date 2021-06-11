@@ -52,20 +52,17 @@ After switching let’s check again active Java version:\
 
 ### Tomcat 9
 1. Download Tomcat 9, Go to  [https://tomcat.apache.org/download-90.cgi](https://tomcat.apache.org/download-90.cgi)
-
 2. Under Core section, right-click on **`tar.gz`** and choose `copy link address`
-
 3. Open AWS Linux 2 Server, in urs/java directory, use `wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.46/bin/apache-tomcat-9.0.46.tar.gz`
-
-4.
+4. 
 
 
 
 
 ## EC2
-1. Convert .pem to .ppk by puttygen\
-2. Get the instance ssh `ec2-18-222-55-120.us-east-2.compute.amazonaws.com`\
-3. In category **Connection/Data**, type `ec2-user` in Auto-login username\  
+1. Convert .pem to .ppk by puttygen
+2. Get the instance ssh `ec2-18-222-55-120.us-east-2.compute.amazonaws.com`
+3. In category **Connection/Data**, type `ec2-user` in Auto-login username
 4. In category **Connection/SSH/Auth**, choose private key file .ppk from step 1
 5. Connect to server
 
