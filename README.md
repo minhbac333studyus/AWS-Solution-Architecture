@@ -94,10 +94,11 @@ then Type `yes` to agree to remove
 
     At this point, you should get the result like the image below
 
-    <img src="https://user-images.githubusercontent.com/37564253/121765608-09844000-cb01-11eb-92d4-8f4a1675849d.png" width="600" height="600" />
+    <img src="https://user-images.githubusercontent.com/37564253/121765608-09844000-cb01-11eb-92d4-8f4a1675849d.png" width="600" height="800" />
     
 7. Change the permission to modify the file by running 2 command
     7.1.
+
         chmod -R 777 apache-folder
         
         or
