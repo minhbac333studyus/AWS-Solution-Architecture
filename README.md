@@ -5,6 +5,8 @@
 - [S3](#s3)
 
 ## Step To Install Tomcat 9 For Java Web Development
+The instruction below is only work after creating the EC2 Instance with Amazon Linux 2 AMI 
+
 - [FileZilla](#FileZilla)
 - [Java](#JAVA)
 - [Tomcat9](#Tomcat9)
@@ -30,6 +32,12 @@
     wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3a%2F%2Fwww.oracle.com%2Ftechnetwork%2Fjava%2Fjavase%2Fdownloads%2Fjdk8-downloads-2133151.html; oraclelicense=accept-securebackup-cookie;" "https://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787e4a523244c269598db4e85c51e0c/jdk-8u191-linux-x64.rpm"
 
 #### Amazon Linux 2 by SUDO COMMAND
+Step 0- Prepare the File and Give Super User/Admid Permission
+Under the root directory, use 2 command lines
+
+        mkdir /usr/java
+        sudo su
+
 Step 1 – Install Java on Amazon Linux
 The OpenJDK 8 is available under default yum repositories and OpenJDK 11 is available under Amazon Linux 2 extras repositories. You can simply install Java 11 or Java 8 on the Amazon Linux system using the following commands.
 
