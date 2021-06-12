@@ -103,14 +103,19 @@ then Type `yes` to agree to remove
         or
 
         chmod -R 777 apache-tomcat-9.0.46
+
+
         chmod -R 777 conf
     
 8. Get Access to Manager App on Tomcat
-    8.1. Under the Apache Folder, modify the context.xml file by command
+    8.1. Under the Apache Folder, modify the **context.xml** file by command
         
         vi webapps/manager/META-INT/context.xml
 
-    In the **context.xml** file, comment the line <!-- <value .... allow = .../> -->
+    In the **context.xml** file, comment the line
+    <!- -
+        <value .... allow = .../> 
+    -->
 
     8.2.  Under the Apache Folder, modify the **tomcat-users.xml** file by command
 
