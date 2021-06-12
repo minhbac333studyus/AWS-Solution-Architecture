@@ -14,7 +14,15 @@
 
 2.Go to Edit/Settings/ choose SFTP and set the private key from AWS for the instance EC2
 
-3.Go to File/Site Manager
+3.Copy the host address from AWS EC2  - Public IPv4 address
+
+<img src="https://user-images.githubusercontent.com/37564253/121766788-4b18e900-cb09-11eb-9500-5dc71ff029d7.png" width="900" height="400" />
+
+3.Go to File/Site Manager, set up like picture below
+
+<img src="https://user-images.githubusercontent.com/37564253/121766855-afd44380-cb09-11eb-8506-cb5777eb4657.png" width="900" height="800" />
+
+
 
 ### Java 
 ####   Amazon Linux 2 by  Wget Command
