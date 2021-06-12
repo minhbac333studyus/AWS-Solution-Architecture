@@ -20,7 +20,7 @@ The instruction below is only work after creating the EC2 Instance with Amazon L
 
 <img src="https://user-images.githubusercontent.com/37564253/121766788-4b18e900-cb09-11eb-9500-5dc71ff029d7.png" width="900" height="400" />
 
-3.Go to File/Site Manager, set up like picture below
+4.Go to File/Site Manager, set up like picture below
 
 <img src="https://user-images.githubusercontent.com/37564253/121766855-afd44380-cb09-11eb-8506-cb5777eb4657.png" width="900" height="800" />
 
