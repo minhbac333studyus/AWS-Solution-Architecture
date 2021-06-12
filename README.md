@@ -67,13 +67,15 @@ After switching let’s check again active Java version:
     or
 
         tar xvfz apache-tomcat-9.0.46.tar.gz
-        
+
 5. After extract the file, remove it by command
 
         rm -r apache-tomcat-9.0.46.tar.gz
 
 then Type `yes` to agree to remove
+
 6. Start the application Server
+
     6.1. Under the Apache directory, go to bin by  
             
         cd bin
