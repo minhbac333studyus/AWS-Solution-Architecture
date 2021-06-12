@@ -105,6 +105,7 @@ then Type `yes` to agree to remove
     or Under the root directory, go 
     
         cd /usr/java/apache-tomcat-9.0.46/bin
+        ./startup.sh
 
     6.2. Connect tomcat 
         
@@ -119,22 +120,26 @@ then Type `yes` to agree to remove
     <img src="https://user-images.githubusercontent.com/37564253/121765608-09844000-cb01-11eb-92d4-8f4a1675849d.png" width="900" height="800" />
     
 7. Change the permission to modify the file by running 2 command
-    7.1.
+    7.1.Under Java directory
 
         chmod -R 777 apache-folder
         
-        or
-
+    or
+        
+        cd 
+        cd .. 
+        cd /usr/java
         chmod -R 777 apache-tomcat-9.0.46
 
-    7.2.
+    7.2. Under apache-tomcat-9.0.46 folder
 
+        cd apache-tomcat-9.0.46
         chmod -R 777 conf
     
 8. Get Access to Manager App on Tomcat
     8.1. Under the Apache Folder, modify the **context.xml** file by command
         
-        vi webapps/manager/META-INT/context.xml
+        vi webapps/manager/META-INF/context.xml
 
     In the **context.xml** file, comment the line
     <!- -
