@@ -21,40 +21,82 @@ Step 1 – Install Java on Amazon Linux
 The OpenJDK 8 is available under default yum repositories and OpenJDK 11 is available under Amazon Linux 2 extras repositories. You can simply install Java 11 or Java 8 on the Amazon Linux system using the following commands.
 
 Run below commands to install Java 11 on Amazon Linux:\
-`
-sudo amazon-linux-extras install java-openjdk11
-`\
+    `
+    sudo amazon-linux-extras install java-openjdk11
+    `\
 Run below commands to install Java 8 on Amazon Linux:\
-`
-sudo yum install java-1.8.0-openjdk
-`\
+    `
+    sudo yum install java-1.8.0-openjdk
+    `\
 Step 2 – Check Active Java Version\
 After successfully installing Java on Amazon Linux using the above steps, Let’s verify the installed version using the following command.\
 
 java -version
 
-`openjdk version "1.8.0_222"`\
-`OpenJDK Runtime Environment (build 1.8.0_222-8u222-b10-1ubuntu1~18.04.1-b10)`\
-`OpenJDK 64-Bit Server VM (build 25.222-b10, mixed mode)`\
+    `openjdk version "1.8.0_222"`\
+    `OpenJDK Runtime Environment (build 1.8.0_222-8u222-b10-1ubuntu1~18.04.1-b10)`\
+    `OpenJDK 64-Bit Server VM (build 25.222-b10, mixed mode)`\
 Step 3 – Switch Java Version
 Use alternatives command-line utility to switch active Java version on your Amazon Linux system. Run below command from the command line and select the appropriate Java version to make it default.\
-`
-alternatives --config java
-`\
+    
+    `alternatives --config java`
+
 Install Java on Amazon Linux
 
 After switching let’s check again active Java version:\
  
-`java -version`\
-`openjdk version "11.0.7" 2020-04-14 LTS`\
-`OpenJDK Runtime Environment 18.9 (build 11.0.7+10-LTS)`\
-`OpenJDK 64-Bit Server VM 18.9 (build 11.0.7+10-LTS, mixed mode, sharing)`\
+    `java -version`\
+    `openjdk version "11.0.7" 2020-04-14 LTS`\
+    `OpenJDK Runtime Environment 18.9 (build 11.0.7+10-LTS)`\
+    `OpenJDK 64-Bit Server VM 18.9 (build 11.0.7+10-LTS, mixed mode, sharing)`\
 
 ### Tomcat 9
 1. Download Tomcat 9, Go to  [https://tomcat.apache.org/download-90.cgi](https://tomcat.apache.org/download-90.cgi)
 2. Under Core section, right-click on **`tar.gz`** and choose `copy link address`
-3. Open AWS Linux 2 Server, in urs/java directory, use `wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.46/bin/apache-tomcat-9.0.46.tar.gz`
-4. 
+3. Open AWS Linux 2 Server, in urs/java directory, use `wget [link copied]`
+or `wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.46/bin/apache-tomcat-9.0.46.tar.gz`
+4. Extract the file just downloaded
+    `tar xvfz apache_File_name.tar.gz` 
+or 
+    `tar xvfz apache-tomcat-9.0.46.tar.gz`
+5. After extract the file, remove it by command
+    `rm -r apache-tomcat-9.0.46.tar.gz`
+then Type `yes` to agree to remove
+6. Start the application Server
+    6.1. Under the Apache directory, go to bin by `cd bin` 
+    or Under the root directory, go `cd /usr/java/apache-tomcat-9.0.46/bin`
+    6.2. Connect tomcat `ps -ef | grep tomcat`
+    6.3. `wget http://localhost:8080`
+
+    At this point, you should get the result like the image below
+
+    <img src="https://user-images.githubusercontent.com/37564253/121765608-09844000-cb01-11eb-92d4-8f4a1675849d.png" width="200" height="200" />
+    
+7. Change the permission to modify the file by running 2 command
+
+    `chmod -R 777 apache-folder\
+    chmod -R 777 apache-tomcat-9.0.46\
+    chmod -R 777 conf
+    `
+8. Get Access to Manager App on Tomcat
+    8.1. Under the Apache Folder, modify the context.xml file by command
+        
+        `vi webapps/manager/META-INT/context.xml`
+
+    In the **context.xml** file, comment the line <!-- <value .... allow = .../> -->
+
+    8.2.  Under the Apache Folder, modify the **tomcat-users.xml** file by command
+
+        `vi conf/tomcat-users.xml`
+    
+    Add 2 lines inside **<tomcat-users> </tomcat-users>** block
+    
+    `<role rolename= "manager-gui" />` 
+    
+    `<user username= "tomcat" password = "s3cret" roles = "manager-gui" />`
+
+
+
 
 
 
