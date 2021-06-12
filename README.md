@@ -43,12 +43,12 @@ Use alternatives command-line utility to switch active Java version on your Amaz
 
 Install Java on Amazon Linux
 
-After switching let’s check again active Java version:\
+After switching let’s check again active Java version:
  
-    `java -version`\
-    `openjdk version "11.0.7" 2020-04-14 LTS`\
-    `OpenJDK Runtime Environment 18.9 (build 11.0.7+10-LTS)`\
-    `OpenJDK 64-Bit Server VM 18.9 (build 11.0.7+10-LTS, mixed mode, sharing)`\
+    `java -version`
+    `openjdk version "11.0.7" 2020-04-14 LTS`
+    `OpenJDK Runtime Environment 18.9 (build 11.0.7+10-LTS)`
+    `OpenJDK 64-Bit Server VM 18.9 (build 11.0.7+10-LTS, mixed mode, sharing)`
 
 ### Tomcat 9
 1. Download Tomcat 9, Go to  [https://tomcat.apache.org/download-90.cgi](https://tomcat.apache.org/download-90.cgi)
@@ -70,30 +70,32 @@ then Type `yes` to agree to remove
 
     At this point, you should get the result like the image below
 
-    <img src="https://user-images.githubusercontent.com/37564253/121765608-09844000-cb01-11eb-92d4-8f4a1675849d.png" width="200" height="200" />
+    <img src="https://user-images.githubusercontent.com/37564253/121765608-09844000-cb01-11eb-92d4-8f4a1675849d.png" width="600" height="600" />
     
 7. Change the permission to modify the file by running 2 command
 
-    `chmod -R 777 apache-folder\
-    chmod -R 777 apache-tomcat-9.0.46\
-    chmod -R 777 conf
-    `
+    `chmod -R 777 apache-folder
+    
+    or
+
+    chmod -R 777 apache-tomcat-9.0.46`
+    `chmod -R 777 conf`
+    
 8. Get Access to Manager App on Tomcat
     8.1. Under the Apache Folder, modify the context.xml file by command
         
-        `vi webapps/manager/META-INT/context.xml`
+        vi webapps/manager/META-INT/context.xml
 
     In the **context.xml** file, comment the line <!-- <value .... allow = .../> -->
 
     8.2.  Under the Apache Folder, modify the **tomcat-users.xml** file by command
 
-        `vi conf/tomcat-users.xml`
+        vi conf/tomcat-users.xml
     
     Add 2 lines inside **<tomcat-users> </tomcat-users>** block
     
-    `<role rolename= "manager-gui" />` 
-    
-    `<user username= "tomcat" password = "s3cret" roles = "manager-gui" />`
+        <role rolename= "manager-gui" /> 
+        <user username= "tomcat" password = "s3cret" roles = "manager-gui" />
 
 
 
