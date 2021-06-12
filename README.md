@@ -129,11 +129,12 @@ then Type `yes` to agree to remove
         <user username= "tomcat" password = "s3cret" roles = "manager-gui" />
 
 
+9. Now open web browers and run `http://localhost:8080/manager/html` 
 
+It should return the web like below
 
-
-
-
+    <img src= "https://user-images.githubusercontent.com/37564253/121766390-4e5ea580-cb06-11eb-8744-789d74873df0.png" width = "900" height = "800"/>
+    
 ## EC2
 1. Convert .pem to .ppk by puttygen
 2. Get the instance ssh `ec2-18-222-55-120.us-east-2.compute.amazonaws.com`
