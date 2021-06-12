@@ -5,10 +5,12 @@
 - [S3](#s3)
 
 ## Step To Install Tomcat 9 For Java Web Development
+- [FileZilla](#FileZilla)
 - [Java](#JAVA)
 - [Tomcat9](#Tomcat9)
 
-1.Install FileZilla Client\
+### FileZialla
+1.Install [FileZilla Client](https://download.filezilla-project.org/client/FileZilla_3.54.1_win64_sponsored-setup.exe)
 2.Go to Edit/Settings/ choose SFTP and set the private key from AWS for the instance EC2\
 3.Go to File/Site Manager
 
@@ -131,8 +133,8 @@ then Type `yes` to agree to remove
 
 9. Now open web browers and run `http://localhost:8080/manager/html` 
 
-It should return the web like below
-    <img src= "https://user-images.githubusercontent.com/37564253/121766390-4e5ea580-cb06-11eb-8744-789d74873df0.png" width = "900" height = "800"/>
+    It should return the web like below
+        <img src= "https://user-images.githubusercontent.com/37564253/121766390-4e5ea580-cb06-11eb-8744-789d74873df0.png" width = "900" height = "800"/>
 
 ## EC2
 1. Convert .pem to .ppk by puttygen
