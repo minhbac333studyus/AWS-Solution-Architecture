@@ -4,7 +4,7 @@
 - [EBS](#ebs)
 - [S3](#s3)
 
-## Step To Install Tomcat 9 For Java Web Development
+## Step To Install Tomcat 9 For Java Web Development on AWS EC2
 The instruction below is only work after creating the EC2 Instance with Amazon Linux 2 AMI 
 
 - [FileZilla](#FileZilla)
@@ -148,6 +148,9 @@ then Type `yes` to agree to remove
 
     8.2.  Under the Apache Folder, modify the **tomcat-users.xml** file by command
 
+        cd 
+        cd .. 
+        cd /usr/java/apache-tomcat-9.0.46
         vi conf/tomcat-users.xml
     
     Add 2 lines inside **<tomcat-users> </tomcat-users>** block
