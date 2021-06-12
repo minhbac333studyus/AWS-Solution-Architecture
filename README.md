@@ -64,9 +64,10 @@ After switching let’s check again active Java version:
 4. Extract the file just downloaded
     
         tar xvfz apache_File_name.tar.gz
-or 
+    or
 
         tar xvfz apache-tomcat-9.0.46.tar.gz
+        
 5. After extract the file, remove it by command
 
         rm -r apache-tomcat-9.0.46.tar.gz
