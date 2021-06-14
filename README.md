@@ -102,7 +102,7 @@ then Type `yes` to agree to remove
             
         cd bin
 
-    or Under the root directory, go 
+    or Under the root directory, start the server
     
         cd /usr/java/apache-tomcat-9.0.46/bin
         ./startup.sh
@@ -165,6 +165,15 @@ then Type `yes` to agree to remove
         <img src= "https://user-images.githubusercontent.com/37564253/121766390-4e5ea580-cb06-11eb-8744-789d74873df0.png" width = "900" height = "800"/>
 
 ## EC2
+### USER DATA
+1.Set up user data for AMI
+
+    yum update -y
+    yum install -y httpd
+    systemctl start httpd
+    systemctl enable httpd
+    echo <h1>Hello World from $(hostname -f)</h1> /var/www/html/index.html
+
 1. Convert .pem to .ppk by puttygen
 2. Get the instance ssh `ec2-18-222-55-120.us-east-2.compute.amazonaws.com`
 3. In category **Connection/Data**, type `ec2-user` in Auto-login username
