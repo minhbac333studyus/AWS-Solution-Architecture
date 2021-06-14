@@ -168,11 +168,12 @@ then Type `yes` to agree to remove
 ### USER DATA
 1.Set up user data for AMI
 
+    sudo su
     yum update -y
     yum install -y httpd
     systemctl start httpd
     systemctl enable httpd
-    echo <h1>Hello World from $(hostname -f)</h1> /var/www/html/index.html
+    echo "<html> <h1>Hello World from $(hostname -f)</h1> </html>" > /var/www/html/index.html
 
 1. Convert .pem to .ppk by puttygen
 2. Get the instance ssh `ec2-18-222-55-120.us-east-2.compute.amazonaws.com`
