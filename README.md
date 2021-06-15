@@ -166,17 +166,16 @@ then Type `yes` to agree to remove
 
 ## EC2
 ### USER DATA
-1.Set up user data for AMI      
+1.Set up user data for AMI -> Create a `user.sh` file     
 
-    #!/bin/bash
-    # install httpd (linux 2 version)
-    yum update -y
-    yum install -y httpd 
-    systemctl start httpd 
-    systemctl enable httpd 
-    EC2ID=$(curl -s http://169.254.169.254/lastest/meta-data/instance-id) 
-    echo "<center> <h1>Hello World from EC2ID </h1> </center>" > /var/www/html/index.txt
-    sed "s/EC2ID/$EC2ID/" /var/www/html/index.txt > /var/www/html/index.html
+        #!/bin/bash
+        yum update -y
+        yum install -y httpd
+        systemctl start httpd
+        systemctl enable httpd
+        EC2ID=$(curl -s http://169.254.169.254/latest/meta-data/instance-id) 
+        echo '<center><h1>The Database of this Amazon EC2 instance is: EC2ID </h1></center>' > /var/www/html/index.txt
+        sed "s/EC2ID/$EC2ID/" /var/www/html/index.txt > /var/www/html/index.html
 
 1. Convert .pem to .ppk by puttygen
 2. Get the instance ssh `ec2-18-222-55-120.us-east-2.compute.amazonaws.com`
