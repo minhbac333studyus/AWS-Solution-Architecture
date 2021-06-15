@@ -175,7 +175,7 @@ then Type `yes` to agree to remove
     systemctl start httpd 
     systemctl enable httpd 
     EC2ID=$(curl -s http://169.254.169.254/lastest/meta-data/instance-id) 
-    echo '<center> <h1>Hello World from EC2ID </h1> </center>' > /var/www/html/index.txt
+    echo "<center> <h1>Hello World from EC2ID </h1> </center>" > /var/www/html/index.txt
     sed "s/EC2ID/$EC2ID/" /var/www/html/index.txt > /var/www/html/index.html
 
 1. Convert .pem to .ppk by puttygen
