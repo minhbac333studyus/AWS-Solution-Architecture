@@ -169,6 +169,8 @@ then Type `yes` to agree to remove
 1.Set up user data for AMI
 
     sudo su
+    #!/bin/bash
+    # install httpd (linux 2 version)
     yum update -y
     yum install -y httpd.x86_64
     systemctl start httpd.service
