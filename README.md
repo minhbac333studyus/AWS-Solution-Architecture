@@ -170,9 +170,9 @@ then Type `yes` to agree to remove
 
     sudo su
     yum update -y
-    yum install -y httpd
-    systemctl start httpd
-    systemctl enable httpd
+    yum install -y httpd.x86_64
+    systemctl start httpd.service
+    systemctl enable httpd.service
     echo "<html> <h1>Hello World from $(hostname -f)</h1> </html>" > /var/www/html/index.html
 
 1. Convert .pem to .ppk by puttygen
