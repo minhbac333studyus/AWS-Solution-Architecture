@@ -162,7 +162,7 @@ then Type `yes` to agree to remove
 9. Now open web browers and run `http://localhost:8080/manager/html` 
 
     It should return the web like below
-        <img src= "https://user-images.githubusercontent.com/37564253/121766390-4e5ea580-cb06-11eb-8744-789d74873df0.png" width = "900" height = "800"/>
+        <img src= "https://user-images.githubusercontent.com/37564253/121766390-4e5ea580-cb06-11eb-8744-789d74873df0.png" width = "1500" height = "800"/>
 
 ## EC2
 ### USER DATA
