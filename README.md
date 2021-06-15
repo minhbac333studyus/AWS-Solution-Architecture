@@ -175,7 +175,7 @@ then Type `yes` to agree to remove
     yum install -y httpd.x86_64
     systemctl start httpd.service
     systemctl enable httpd.service
-    echo "<html> <h1>Hello World from $(hostname -f)</h1> </html>" > /var/www/html/index.html
+    echo '<html> <h1>Hello World from $(hostname -f)</h1> </html>' > /var/www/html/index.html
 
 1. Convert .pem to .ppk by puttygen
 2. Get the instance ssh `ec2-18-222-55-120.us-east-2.compute.amazonaws.com`
