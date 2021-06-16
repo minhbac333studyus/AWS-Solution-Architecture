@@ -18,7 +18,7 @@ The instruction below is only work after creating the EC2 Instance with Amazon L
 
 3.Copy the host address from AWS EC2  - Public IPv4 address
 
-<img src="https://user-images.githubusercontent.com/37564253/121766788-4b18e900-cb09-11eb-9500-5dc71ff029d7.png" width="900" height="400" />
+<img src="https://user-images.githubusercontent.com/37564253/121766788-4b18e900-cb09-11eb-9500-5dc71ff029d7.png" width="900" height="300" />
 
 4.Go to File/Site Manager, set up like picture below
 
