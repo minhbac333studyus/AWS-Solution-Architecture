@@ -81,7 +81,7 @@ After switching let’s check again active Java version:
 
     or
 
-        wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.46/bin/apache-tomcat-9.0.46.tar.gz
+        wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.50/bin/apache-tomcat-9.0.50.tar.gz
 
 4. Extract the file just downloaded
     
